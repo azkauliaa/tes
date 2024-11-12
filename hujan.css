@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-color: #87CEFA; /* Latar belakang biru muda */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.rain-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gaya untuk rintik hujan */
+.rain-drop {
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: 15px;
+  background-color: #ffffff; /* Warna putih untuk rintik hujan */
+  opacity: 0.6;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Gaya untuk tombol */
+.main-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #FFD700; /* Warna tombol emas */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-color: #87CEFA; /* Latar belakang biru muda */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Gaya untuk animasi kupu-kupu */
+.butterfly {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #FF69B4; /* Warna kupu-kupu */
+  border-radius: 50%;
+  animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+  0% { top: 10%; left: 10%; }
+  25% { top: 20%; left: 70%; }
+  50% { top: 50%; left: 50%; }
+  75% { top: 80%; left: 20%; }
+  100% { top: 10%; left: 10%; }
+}
